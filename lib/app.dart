@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/config/theme/app_theme.dart';
+import 'package:flutter_widgets/screens/home/home_screen.dart';
 
 class WidgetApp extends StatelessWidget {
   const WidgetApp({super.key});
@@ -11,12 +12,7 @@ class WidgetApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: AppTheme(selectedColor: 3).getTheme(),
-      home: Scaffold(
-        appBar: AppBar(title: Text('Flutter Demo')),
-        body: Center(
-          child: FilledButton(onPressed: () {}, child: Text('Filled Button')),
-        ),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
