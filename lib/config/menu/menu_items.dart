@@ -6,7 +6,7 @@ class MenuItems {
   final String link;
   final IconData icon;
 
-  MenuItems({
+  const MenuItems({
     required this.title,
     required this.subTitle,
     required this.link,
@@ -14,7 +14,7 @@ class MenuItems {
   });
 }
 
-var appMenuItems = <MenuItems>[
+const appMenuItems = <MenuItems>[
   MenuItems(
     title: 'Botones',
     subTitle: 'Botones de diferentes estilos',
