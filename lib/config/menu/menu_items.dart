@@ -36,4 +36,11 @@ const appMenuItems = <MenuItems>[
     icon: Icons.credit_card,
   ),
   
+  MenuItems(
+    title: 'Snackbars and Dialogs',
+    subTitle: 'Indicadores en pantalla',
+    link: '/snackbars',
+    icon: Icons.info_outline,
+  ),
+  
 ];
