@@ -18,7 +18,7 @@ final slides = <SlideInfo>[
     title: 'Busca la comida',
     caption:
         'Esse officia nostrud exercitation id anim culpa ut ad incididunt enim dolore aliqua.',
-    imageUrl: 'assets/Images/1.png',
+    imageUrl: 'assets/images/1.png',
   ),
   const SlideInfo(
     title: 'Entrega rápida',
@@ -34,10 +34,27 @@ final slides = <SlideInfo>[
   ),
 ];
 
-class AppTutorialScreen extends StatelessWidget {
+class AppTutorialScreen extends StatefulWidget {
   static const String name = 'app_tutorial_screen';
 
   const AppTutorialScreen({super.key});
+
+  @override
+  State<AppTutorialScreen> createState() => _AppTutorialScreenState();
+}
+
+class _AppTutorialScreenState extends State<AppTutorialScreen> {
+  final PageController pageViewController = PageController();
+  // int currentPage = 0;
+
+  @override
+  void initState() {
+    super.initState();
+
+    pageViewController.addListener(() {
+      print('${pageViewController.page}');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
