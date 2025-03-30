@@ -57,4 +57,11 @@ const appMenuItems = <MenuItems>[
     icon: Icons.radio_button_checked_outlined,
   ),
   
+  MenuItems(
+    title: 'Tutorial screen',
+    subTitle: 'Tutorial de la app',
+    link: '/tutorial',
+    icon: Icons.book_online_outlined,
+  ),
+  
 ];
